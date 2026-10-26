@@ -26,6 +26,9 @@
     if (i < 0) return esc(text);
     return esc(text.slice(0, i)) + "<mark>" + esc(text.slice(i, i + q.length)) + "</mark>" + esc(text.slice(i + q.length));
   }
+  function img(id, w) {
+    return "https://images.unsplash.com/photo-" + id + "?auto=format&fit=crop&w=" + w + "&q=70";
+  }
   function fmt(p) {
     if (p === null || p === undefined) return "—";
     if (typeof p === "number") return String(p).replace(".", ",");
@@ -46,8 +49,15 @@
       total += items.length;
       chipHtml += '<a class="chip" href="#cat-' + cat.id + '" data-cat="' + cat.id + '">' + esc(cat.title) + "</a>";
 
-      html += '<section class="cat" id="cat-' + cat.id + '"><div class="cat-head"><h3>' + esc(cat.title) +
-        '</h3><span class="cat-count">' + items.length + " mövqe</span></div>";
+      html += '<section class="cat" id="cat-' + cat.id + '">';
+      if (cat.img && !q) {
+        html += '<figure class="cat-cover"><img src="' + img(cat.img, 1200) + '" srcset="' + img(cat.img, 700) + ' 700w, ' +
+          img(cat.img, 1200) + ' 1200w" sizes="(max-width: 720px) 100vw, 1180px" alt="' + esc(cat.title) +
+          '" loading="lazy" decoding="async" onerror="this.parentNode.classList.add(\'noimg\');this.remove()"><figcaption><h3>' + esc(cat.title) +
+          '</h3><span class="cat-count">' + items.length + " mövqe</span></figcaption></figure>";
+      } else {
+        html += '<div class="cat-head"><h3>' + esc(cat.title) + '</h3><span class="cat-count">' + items.length + " mövqe</span></div>";
+      }
       if (cat.note && !q) html += '<p class="cat-note">' + esc(cat.note) + "</p>";
 
       if (cat.cols) {
@@ -128,6 +138,21 @@
   }
 
   render();
+
+  // "Ən çox sevilənlər" kartı → menyuda həmin kateqoriyaya keç
+  document.addEventListener("click", function (e) {
+    var j = e.target.closest("[data-jump]");
+    if (!j) return;
+    e.preventDefault();
+    var parts = j.getAttribute("data-jump").split(":");
+    if (state.tab !== parts[0] || state.query) {
+      state.tab = parts[0]; state.query = ""; search.value = "";
+      tabs.forEach(function (x) { x.setAttribute("aria-selected", x.getAttribute("data-tab") === parts[0] ? "true" : "false"); });
+      render();
+    }
+    var el = document.getElementById("cat-" + parts[1]);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 
   // Mobil naviqasiya
   var toggle = document.getElementById("menu-toggle");

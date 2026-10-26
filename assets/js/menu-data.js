@@ -3,13 +3,13 @@
    Bar bölmələrində qiymət massiv ola bilər: sütunlar "cols" ilə verilir. */
 window.AVENUE_MENU = {
   kitchen: [
-    { id: "sorbalar", title: "Şorbalar", items: [
+    { id: "sorbalar", img: "1589187154184-995b8a4e740a", title: "Şorbalar", items: [
       ["Düşbərə", 5, "Bakı sayağı düşbərə"],
       ["Borş", 8, "Mal əti, kələm, çuğundur, kök"],
       ["Xarço", 7, "Mal əti, yumru düyü, xmeli-suneli, tkemali, qoz"],
       ["Toyuq supu", 5, "Toyuq file, yumru düyü, kartof, soğan"]
     ]},
-    { id: "salatlar", title: "Salatlar", items: [
+    { id: "salatlar", img: "1546793665-c74683f339c1", title: "Salatlar", items: [
       ["Can əti salatı", 22, "Can əti, pomidor, xiyar, göyərti, soğan, acı bibər, xüsusi sous"],
       ["Krevetka avokado salatı", 20, "Krevetka, avokado, parmezan, pomidor, mix salat, xüsusi sous"],
       ["Xırt-xırtlı badımcan salatı", 9, "Badımcan, pomidor, ağ küncüt, göy soğan, xüsusi sous"],
@@ -19,7 +19,7 @@ window.AVENUE_MENU = {
       ["Sveji salat", 6, "Pomidor, xiyar, qırmızı soğan"],
       ["Çoban salatı pendirli", 8, "Pomidor, xiyar, göyərtilər, ağ pendir, qırmızı soğan"]
     ]},
-    { id: "qelyanaltilar", title: "Qəlyanaltılar", items: [
+    { id: "qelyanaltilar", img: "1589881133595-a3c085cb731d", title: "Qəlyanaltılar", items: [
       ["Haydari", 6, "Süzmə, xama, nanə, kərə yağı, göyərti"],
       ["Zeytun assorti", 8, "Yaşıl və qara zeytun"],
       ["Ağ pendir", 5],
@@ -32,7 +32,7 @@ window.AVENUE_MENU = {
       ["Üçlü turşu", 12, "Sparja, kök, albalı"],
       ["Acılı əzmə", 6, "Bibər, pomidor, zeytun yağı, sarımsaq, soğan, göyərti"]
     ]},
-    { id: "toyuq", title: "Toyuq yeməkləri", note: "“Qarnir seçimi” olan yeməklərə qarniri özünüz seçirsiniz.", items: [
+    { id: "toyuq", img: "1606728035253-49e8a23146de", title: "Toyuq yeməkləri", note: "“Qarnir seçimi” olan yeməklərə qarniri özünüz seçirsiniz.", items: [
       ["Tabaka çolpa", 22, "Kənd çolpası, kərə yağı, ev sayağı kartof"],
       ["Toyuq langet", 14, "Toyuq filesi, kərə yağı, qarnir seçimi"],
       ["Çolpa çığırtması", 22, "Kənd çolpası, kərə yağı, pomidor, soğan, yumurta"],
@@ -47,7 +47,7 @@ window.AVENUE_MENU = {
       ["Xardallı toyuq", 16, "Toyuq filesi, xardal, qaymaq, ədviyyatlar"],
       ["Toyuq çöp şiş", 15, "Toyuq filesi, bibər, soğan, qarnir seçimi"]
     ]},
-    { id: "et", title: "Ət yeməkləri", items: [
+    { id: "et", img: "1600891964092-4316c288032e", title: "Ət yeməkləri", items: [
       ["Quzu antrekot cızdağ", 20, "Quzu antrekot, quzu quyruq, pomidor, acı bibər"],
       ["Can əti nar qovurma", 20, "Can əti, soğan, nar, şabalıd, nar sousu"],
       ["Quzu nar qovurma", 20, "Quzu əti, quyruq, soğan, şabalıd, nar"],
@@ -64,12 +64,12 @@ window.AVENUE_MENU = {
       ["Quzu jarkoye", 19, "Quzu əti, kartof, soğan"],
       ["Qara tava", 25, "Can əti, uzun düyü, göbələk, soğan, ağ çaxır, cəfəri, pomidor"]
     ]},
-    { id: "saclar", title: "Saclar", items: [
+    { id: "saclar", img: "1608877906601-33195b1dc2cb", title: "Saclar", items: [
       ["Quzu əti sacı", 34, "Quzu əti, quyruq, soğan, göbələk, kartof, badımcan, pomidor, bibər"],
       ["Can əti sacı", 38, "Can əti, soğan, göbələk, kartof, badımcan, bibər, pomidor"],
       ["Toyuq sacı", 30, "Kənd çolpası, soğan, göbələk, kartof, pomidor, badımcan, bibər"]
     ]},
-    { id: "deniz", title: "Dəniz məhsulları", items: [
+    { id: "deniz", img: "1519708227418-c8fd9a32b7a2", title: "Dəniz məhsulları", items: [
       ["Losos steak", 22, "Forel balığı, yağ, limon, narşərab"],
       ["Losos rosso sousunda", 25, "Forel balığı, rosso sousu, qaymaq, yağ, limon"],
       ["Sudak (tavada)", 22, "Sudak balığı, soğan, nar dənəsi, narşərab, nar məti"],
@@ -80,7 +80,7 @@ window.AVENUE_MENU = {
       ["Dorado (hisə verilmiş)", 20, "Hisə verilmiş dorado balığı, limon"],
       ["Hisə verilmiş forel", 12, "Hisə verilmiş forel balığı, limon"]
     ]},
-    { id: "mezeler", title: "Məzələr", items: [
+    { id: "mezeler", img: "1567620832903-9fc6debc209f", title: "Məzələr", items: [
       ["Noxud", 4], ["Saçaq pendir", 5], ["Qızardılmış pətənək marinadlı", 6],
       ["Qızardılmış saçaq pendir", 5], ["Ağ / qara tum qovurulmuş", 7], ["Qızardılmış düşbərə", 6],
       ["Edamame", 8], ["Naços", 18], ["Gürzə qızartma", 8], ["Gürcü xəngəli qızartma (4 əd.)", 6],
@@ -91,18 +91,18 @@ window.AVENUE_MENU = {
       ["Pendirli qrenki", 8], ["Basdırma ət (Jerky)", 6], ["Pendir topları", 8],
       ["Forel hisə verilmiş", 12], ["Dorado hisə verilmiş", 20], ["Krevetka çay / dəniz", 14]
     ]},
-    { id: "qarnirler", title: "Qarnirlər", items: [
+    { id: "qarnirler", img: "1518013431117-eb1465fa5752", title: "Qarnirlər", items: [
       ["Püre", 4], ["Düyü", 4], ["Kartof fri", 4], ["Ev sayağı kartof qızartması", 4],
       ["Kartof soyutması", 4], ["Rizotto by Avenue", 6], ["Qovrulmuş düyü", 6]
     ]},
-    { id: "kanape", title: "Kanape", items: [
+    { id: "kanape", img: "1771154136172-0633db70b7dc", title: "Kanape", items: [
       ["Kanape siyənək", 14, "Qara çörək, qırmızı soğan, siyənək, kərə yağı"],
       ["Kanape şprot", 14, "Qara çörək, xüsusi sous, şprot balığı, turşu xiyar"],
       ["Kanape tuna", 14, "Qara çörək, tuna balığı, şüyüd, çeri pomidor"],
       ["Kanape quyruğ", 14, "Qara çörək, quyruğ, şüyüd, xüsusi sous"],
       ["Kanape set", 38, "Qara çörək, qırmızı soğan, tuna, şprot, siyənək, quyruğ, turşu xiyar, kartof"]
     ]},
-    { id: "fastfood", title: "Fast food", items: [
+    { id: "fastfood", img: "1568901346375-23c9450c58cd", title: "Fast food", items: [
       ["Avenue sandwich", 15, "Tost çörək, toyuq file, xiyar turşusu, xiyar, pomidor, xüsusi sous"],
       ["Dürüm toyuq", 12, "Toyuq file, pomidor, xiyar, xüsusi sous, lavaş, kartof fri, ketçup, mayonez"],
       ["Dürüm ət", 17, "Can əti, lavaş, pomidor, xiyar, xüsusi sous, kartof fri, ketçup, mayonez"],
@@ -113,11 +113,11 @@ window.AVENUE_MENU = {
       ["Nuggets", 10, "Toyuq file, sweet chili sous, suxari, kartof fri"],
       ["Krevet tempura", 18, "Krevetka, sweet chili sous, suxari"]
     ]},
-    { id: "sosisler", title: "Sosislər", items: [
+    { id: "sosisler", img: "1552913903-2cffa1962dc7", title: "Sosislər", items: [
       ["Oxotnik", 10], ["İveria Gürcü", 10], ["Sardelka Gürcü", 10], ["Südlü sosis", 12],
       ["Manqalüstü", 10], ["Sosis seti", 35, "Sosis çeşidləri"]
     ]},
-    { id: "desertler", title: "Desertlər", items: [
+    { id: "desertler", img: "1761828122856-8703baac8e86", title: "Desertlər", items: [
       ["Meyvə assorti S / M / L", "10 / 20 / 30", "Mövsümə uyğun meyvə çeşidləri"],
       ["Dondurma", 8, "Üç top"],
       ["Türk paxlavası", 6],
@@ -127,17 +127,17 @@ window.AVENUE_MENU = {
   ],
 
   bar: [
-    { id: "celle-pivesi", title: "Çəllək pivəsi", cols: ["330 ml", "500 ml"], items: [
+    { id: "celle-pivesi", img: "1535958636474-b021ee887b13", title: "Çəllək pivəsi", cols: ["330 ml", "500 ml"], items: [
       ["Special sadə", [3, 3.5]], ["Special NF", [3.5, 4]], ["Xırdalan sadə", [3, 3.5]],
       ["Xırdalan NF", [3.5, 4]], ["Alivaria sadə", [5, 6]], ["Alivaria NF", [5, 6]],
       ["Lidskaya", [5, 6]], ["Jiguli Barnoe", [5, 6]], ["Carlsberg", [5, 6]],
       ["1664 Blanc", [5, 6]], ["Erdinger", [8, 9]], ["Pražačka", [8, 9]]
     ]},
-    { id: "suse-piveler", title: "Şüşə pivələr", items: [
+    { id: "suse-piveler", img: "1546622891-02c72c1537b6", title: "Şüşə pivələr", items: [
       ["Hoegaarden", 9], ["Stella Artois", 9], ["Erdinger Zero", 9], ["Erdinger Dark", 9],
       ["Baltika Zero", 7], ["Xırdalan Zero", 6], ["Efes Zero", 6], ["Efes Draft", 7], ["Corona Extra", 9]
     ]},
-    { id: "vodka", title: "Vodka", cols: ["50 ml", "0.5 L", "0.7 L", "1 L"], items: [
+    { id: "vodka", img: "1470337458703-46ad1756a187", title: "Vodka", cols: ["50 ml", "0.5 L", "0.7 L", "1 L"], items: [
       ["Absolut", [7, 55, 75, 85]], ["Finlandia", [6, 50, 70, 80]],
       ["Russkiy Standart", [null, 55, 65, null]], ["Koskenkorva", [null, 60, 70, 85]],
       ["Parlament", [null, 45, 55, null]], ["Arxangelskaya", [6, 38, 48, 62]],
@@ -155,7 +155,7 @@ window.AVENUE_MENU = {
     { id: "konyak", title: "Konyak", cols: ["0.7 L"], items: [
       ["Azərbaycan XO", [111]], ["Rémy Martin VSOP", [222]]
     ]},
-    { id: "viski", title: "Viski", cols: ["50 ml", "0.5 L", "0.7 L", "1 L"], items: [
+    { id: "viski", img: "1470337458703-46ad1756a187", title: "Viski", cols: ["50 ml", "0.5 L", "0.7 L", "1 L"], items: [
       ["Jameson", [8, 84, 99, 119]], ["Jack Daniel's", [9, null, 95, 129]],
       ["Chivas 12", [9, null, 99, 133]], ["Chivas 18", [16, null, null, 237]],
       ["Monkey Shoulder", [9, 89, 99, 144]]
@@ -171,21 +171,21 @@ window.AVENUE_MENU = {
     { id: "vermut", title: "Vermut", cols: ["50 ml", "1 L"], items: [
       ["Martini Bianco", [8, 93]], ["Martini Rosso", [8, 93]]
     ]},
-    { id: "kokteyller", title: "Alkoqollu kokteyllər", items: [
+    { id: "kokteyller", img: "1514362545857-3bc16c4c7d1b", title: "Alkoqollu kokteyllər", items: [
       ["Aperol Spritz", 18], ["Long Island", 22], ["Mojito Alco", 17], ["Negroni", 17],
       ["Mai Tai", 18], ["Gin Tonic", 16], ["Long Island Energy", 25], ["Mojito Energy", 19],
       ["Cuba Libre", 14], ["Tequila Sunrise", 15], ["Margarita", 15]
     ]},
-    { id: "alkoqolsuz", title: "Alkoqolsuz kokteyllər", items: [
+    { id: "alkoqolsuz", img: "1609951651556-5334e2706168", title: "Alkoqolsuz kokteyllər", items: [
       ["Mojito", 12], ["Mojito çiyələk", 12], ["Mojito Energy", 15], ["Sunrise", 11]
     ]},
     { id: "shots", title: "Shotlar", items: [
       ["B-52", 14], ["Hiroshima", 16], ["Meduza", 15]
     ]},
-    { id: "shot-set", title: "Shot setləri", items: [
+    { id: "shot-set", img: "1570598912132-0ba1dc952b7d", title: "Shot setləri", items: [
       ["Traffic Light", 24], ["Avenue Special", 25], ["Ice Cream Shot", 25], ["Mexican Shot", 25]
     ]},
-    { id: "soyuq", title: "Soyuq içkilər", items: [
+    { id: "soyuq", img: "1551024709-8f23befc6f87", title: "Soyuq içkilər", items: [
       ["Coca-Cola / Fanta / Sprite 0.33", 5], ["Ev sayağı Ice Tea 350 ml", 7], ["Ev sayağı Ice Tea 1 L", 20],
       ["Meyvə suyu Sandora", 8], ["Ev sayağı limonad 350 ml", 8], ["Ev sayağı limonad 1 L", 20],
       ["Red Bull 0.33", 8], ["Qazlı / qazsız su", 5], ["Meyvə kompotu", 7],
